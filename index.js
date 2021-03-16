@@ -9,3 +9,16 @@ function getUser(id,callback){
         callback({id:id,GitHubUserName:'Solomon'});
     },2000);
 }
+//async await
+async function displayItems(){
+    try{
+    setTimeout(()=>{
+        const arr = [1,2,4,5];
+        console.log(arr)
+    })
+   }
+   catch(error){
+       console.log(error)
+   }
+};
+displayItems();
